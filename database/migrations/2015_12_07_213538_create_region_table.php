@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateEmloyeeTerritoriesTable extends Migration {
+class CreateRegionsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,10 @@ class CreateEmloyeeTerritoriesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('emloyee_territories', function(Blueprint $table)
+		Schema::create('region', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->integer('RegionID')->primary();
+			$table->string('RegionDescription', 50);
 		});
 	}
 
@@ -26,7 +26,7 @@ class CreateEmloyeeTerritoriesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('emloyee_territories');
+		Schema::drop('region');
 	}
 
 }

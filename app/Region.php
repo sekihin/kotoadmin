@@ -4,6 +4,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Region extends Model {
 
-	//
+        protected $table = 'Region';
 
+        protected $primaryKey = 'RegionID';
+
+        protected $fillable=[
+            'RegionID',
+            'RegionDescription'
+        ];
 }

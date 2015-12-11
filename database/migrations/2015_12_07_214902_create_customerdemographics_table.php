@@ -12,10 +12,10 @@ class CreateCustomerDemographicsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('customer_demographics', function(Blueprint $table)
+		Schema::create('customerdemographics', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->string('CustomerTypeID', 10)->primary();
+			$table->text('CustomerDesc', 16777215)->nullable();
 		});
 	}
 
@@ -26,7 +26,7 @@ class CreateCustomerDemographicsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('customer_demographics');
+		Schema::drop('customerdemographics');
 	}
 
 }

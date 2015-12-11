@@ -14,8 +14,9 @@ class CreateTerritoriesTable extends Migration {
 	{
 		Schema::create('territories', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->string('TerritoryID', 20)->primary();
+			$table->string('TerritoryDescription', 50);
+			$table->integer('RegionID')->index('FK_Territories_Region');
 		});
 	}
 

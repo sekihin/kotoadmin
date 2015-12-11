@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOrderDetailsTable extends Migration {
+class CreateEmloyeeTerritoriesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,10 @@ class CreateOrderDetailsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('order_details', function(Blueprint $table)
+		Schema::create('emloyeeterritories', function(Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->string('CustomerTypeID', 10)->primary();
+			$table->text('CustomerDesc', 16777215)->nullable();
 		});
 	}
 
@@ -26,7 +26,7 @@ class CreateOrderDetailsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('order_details');
+		Schema::drop('emloyee_territories');
 	}
 
 }
