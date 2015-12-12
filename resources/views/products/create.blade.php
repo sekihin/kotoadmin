@@ -1,4 +1,4 @@
-@extends('layout.template')
+@extends('layout.master')
 @section('content')
     <h1>Create Product</h1>
     {!! Form::open(['url' => 'products']) !!}

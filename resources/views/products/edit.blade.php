@@ -1,4 +1,4 @@
-@extends('layout.template')
+@extends('layout.master')
 @section('content')
     <h1>Update Product</h1>
     {!! Form::model($product,['method' => 'PATCH','route'=>['products.update',$product->ProductID]]) !!}

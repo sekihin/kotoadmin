@@ -1,4 +1,4 @@
-@extends('layout/template')
+@extends('layout.master')
 @section('content')
     <h1>Customer Show [{{ $customer->CustomerID }}]</h1>
     <form class="form-horizontal">
