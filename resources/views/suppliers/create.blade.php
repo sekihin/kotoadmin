@@ -1,11 +1,15 @@
 @extends('layout.master')
 @section('content')
-    <h1>Update Customer</h1>
-    {!! Form::model($customer,['method' => 'PATCH','route'=>['customers.update',$customer->CustomerID]]) !!}
+    <h1>Create Supplier</h1>
+    {!! Form::open(['url' => 'suppliers']) !!}
     <div class="form-group">
-        <a href="{{ url('customers')}}" class="btn btn-primary">Back</a>
-        {!! Form::submit('Update', ['class' => 'btn btn btn-warning']) !!}
-    </div>
+        <a href="{{ url('suppliers')}}" class="btn btn-primary">Back</a>
+        {!! Form::submit('Save', ['class' => 'btn btn btn-warning']) !!}
+    </div> 
+    <div class="form-group">
+        {!! Form::label('SupplierID', 'SupplierID:') !!}
+        {!! Form::text('SupplierID',null,['class'=>'form-control']) !!}
+    </div>    
     <div class="form-group">
         {!! Form::label('CompanyName', 'CompanyName:') !!}
         {!! Form::text('CompanyName',null,['class'=>'form-control']) !!}
@@ -47,8 +51,12 @@
         {!! Form::text('Fax',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
+        {!! Form::label('HomePage', 'HomePage:') !!}
+        {!! Form::text('HomePage',null,['class'=>'form-control']) !!}
+    </div>
+    <div class="form-group">
         <a href="{{ url('customers')}}" class="btn btn-primary">Back</a>
-        {!! Form::submit('Update', ['class' => 'btn btn btn-warning']) !!}
+        {!! Form::submit('Save', ['class' => 'btn btn btn-warning']) !!}
     </div>
     {!! Form::close() !!}
 @stop

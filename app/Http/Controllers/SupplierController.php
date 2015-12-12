@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Supplier;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,8 @@ class SupplierController extends Controller {
 	 */
 	public function index()
 	{
-		//
+        $suppliers=Supplier::all();
+        return view('suppliers.index',compact('suppliers'));
 	}
 
 	/**
@@ -24,7 +26,7 @@ class SupplierController extends Controller {
 	 */
 	public function create()
 	{
-		//
+        return view('suppliers.create');
 	}
 
 	/**
@@ -34,7 +36,9 @@ class SupplierController extends Controller {
 	 */
 	public function store()
 	{
-		//
+        $supplier=Request::all();
+        Supplier::create($supplier);
+        return redirect('suppliers');
 	}
 
 	/**
@@ -45,7 +49,8 @@ class SupplierController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+        $supplier = Supplier::find($id);
+        return view('suppliers.show', array('supplier' => $supplier));
 	}
 
 	/**
@@ -56,7 +61,8 @@ class SupplierController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+        $supplier=Supplier::find($id);
+        return view('suppliers.edit',compact('supplier'));
 	}
 
 	/**
@@ -67,7 +73,10 @@ class SupplierController extends Controller {
 	 */
 	public function update($id)
 	{
-		//
+        $supplierUpdate=Request::all();
+        $supplier=Supplier::find($id);
+        $supplier->update($supplierUpdate);
+        return redirect('suppliers');
 	}
 
 	/**
@@ -78,7 +87,8 @@ class SupplierController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+        Supplier::find($id)->delete();
+        return redirect('suppliers');
 	}
 
 }

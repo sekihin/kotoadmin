@@ -94,7 +94,6 @@ $(document).ready(function(){
 		mainNavLinkAll.each(function(index) {
 			//convert href to array and get last element
 			var href= $(this).attr('href');
-
 			if(href == url) {
 				//set new current class
 				$(this).addClass('current');
@@ -110,8 +109,6 @@ $(document).ready(function(){
 			}
 		});
 	}
-
-
 	if(domain === '') {
 		//domain not found looks like is in testing phase
 		var pageUrl = window.location.pathname.split( '/' );
@@ -119,19 +116,19 @@ $(document).ready(function(){
 		setCurrentClass(mainNavLinkAll, winLoc);
 
 	} else {
-		if(absoluteUrl === 0) {
-			//absolute url is disabled
-			var afterDomain = window.location.pathname;
-			if(folder !='') {
-				afterDomain = afterDomain.replace(folder + '/','');
-			} else {
-				afterDomain = afterDomain.replace('/','');
-			}
-			setCurrentClass(mainNavLinkAll, afterDomain);
+		if(absoluteUrl !== 0 || domain === "localhost") {
+            //absolute url is enabled
+            var newDomain = 'http://' + domain + window.location.pathname;
+            setCurrentClass(mainNavLinkAll, newDomain);
 		} else {
-			//absolute url is enabled
-			var newDomain = 'http://' + domain + window.location.pathname;
-			setCurrentClass(mainNavLinkAll, newDomain);
+            //absolute url is disabled
+            var afterDomain = window.location.pathname;
+            if(folder !='') {
+                afterDomain = afterDomain.replace(folder + '/','');
+            } else {
+                afterDomain = afterDomain.replace('/','');
+            }
+            setCurrentClass(mainNavLinkAll, afterDomain);
 		}
 	}
 

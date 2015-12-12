@@ -134,13 +134,13 @@
                     <!-- End .sidenav-widget -->
                     <div class="mainnav">
                         <ul>
-                            <li><a href="dashboard.html"><span class="icon16 icomoon-icon-dashboard"></span>Dashboard</a></li>
+                            <li><a href="{{url('/admin')}}"><span class="icon16 icomoon-icon-dashboard"></span>Dashboard</a></li>
                             <li> <a href="#"><span class="icon16 icomoon-icon-truck"></span>Manage Purchase</a>
                                 <ul class="sub">
                                     <li><a href="#"><span class="icon16 icomoon-icon-gift"></span>Supplier</a>
                                         <ul class="sub">
-                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Supplier</a></li>
-                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Supplier</a></li>
+                                            <li><a href="{{url('/suppliers/create')}}"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Supplier</a></li>
+                                            <li><a href="{{url('/suppliers')}}"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Supplier</a></li>
                                         </ul>
                                     </li>
                                     <li> <a href="#"><span class="icon16 silk-icon-credit-card"></span>Purchase<span class="notification red">new</span></a>
@@ -153,8 +153,8 @@
                             </li>
                             <li> <a href="#"><span class="icon16 icomoon-icon-grid-3"></span>Product</a>
                                 <ul class="sub">
-                                    <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Product</a></li>
-                                    <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Product</a></li>
+                                    <li><a href="{{url('/products/create')}}"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Product</a></li>
+                                    <li><a href="{{url('/products')}}"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Product</a></li>
                                     <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Barcode Print</a></li>
                                     <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Damage Product</a></li>
                                     <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Category</a>
@@ -174,8 +174,8 @@
                             </li>
                             <li> <a href="#"><span class="icon16 icomoon-icon-user"></span>Customer</a>
                                 <ul class="sub">
-                                    <li><a href="#"><span class="icon16 icomoon-icon-user-plus-2"></span>Add Customer</a></li>
-                                    <li><a href="#"><span class="icon16 icomoon-icon-vcard"></span>Manage Customer</a></li>
+                                    <li><a href="{{url('/customers/create')}}"><span class="icon16 icomoon-icon-user-plus-2"></span>Add Customer</a></li>
+                                    <li><a href="{{url('/customers')}}"><span class="icon16 icomoon-icon-vcard"></span>Manage Customer</a></li>
                                 </ul>
                             </li>
                             <li> <a href="#"><span class="icon16 icomoon-icon-stats"></span>Report</a>
@@ -199,8 +199,8 @@
                             </li>
                             <li> <a href="#"><span class="icon16 icomoon-icon-users"></span>Employee</span></a>
                                 <ul class="sub">
-                                    <li><a href="#"><span class="icon16 icomoon-icon-list"></span>Employee List</a></li>
-                                    <li><a href="#"><span class="icon16 icomoon-icon-user-plus"></span>Add Employee</a></li>
+                                    <li><a href="{{url('/employees')}}"><span class="icon16 icomoon-icon-list"></span>Employee List</a></li>
+                                    <li><a href="{{url('/employees/create')}}"><span class="icon16 icomoon-icon-user-plus"></span>Add Employee</a></li>
                                 </ul>
                             </li>
                         </ul>

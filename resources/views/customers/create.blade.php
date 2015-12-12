@@ -47,7 +47,7 @@
         {!! Form::text('Phone',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('Fax', 'Country:') !!}
+        {!! Form::label('Fax', 'Fax:') !!}
         {!! Form::text('Fax',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
