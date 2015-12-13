@@ -1,0 +1,817 @@
+
+<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Supr admin</title>
+    <meta name="author" content="SuggeElson" />
+    <meta name="description" content="Supr admin template - new premium responsive admin template. This template is designed to help you build the site administration without losing valuable time.Template contains all the important functions which must have one backend system.Build on great twitter boostrap framework" />
+    <meta name="keywords" content="admin, admin template, admin theme, responsive, responsive admin, responsive admin template, responsive theme, themeforest, 960 grid system, grid, grid theme, liquid, masonry, jquery, administration, administration template, administration theme, mobile, touch , responsive layout, boostrap, twitter boostrap" />
+    <meta name="application-name" content="Supr admin template" />
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Force IE9 to render in normla mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Le styles -->
+    <!-- Use new way for google web fonts 
+    http://www.smashingmagazine.com/2012/07/11/avoiding-faux-weights-styles-google-web-fonts -->
+    <!-- Headings -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />  -->
+    <!-- Text -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' /> --> 
+    <!--[if lt IE 9]>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!-- Core stylesheets do not remove -->
+    <link id="bootstrap" href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/supr-theme/jquery.ui.supr.css" rel="stylesheet" type="text/css"/>
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+
+    <!-- Plugin stylesheets -->
+    <link href="plugins/misc/qtip/jquery.qtip.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/forms/uniform/uniform.default.css" type="text/css" rel="stylesheet" />
+
+    <!-- Main stylesheets -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom stylesheets ( Put your own changes here ) -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+      <script type="text/javascript" src="js/libs/html5.js"></script>
+      <script type="text/javascript" src="js/libs/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png" />
+    
+    <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
+    <meta name="application-name" content="Supr"/> 
+    <meta name="msapplication-TileColor" content="#3399cc"/> 
+
+    <!-- Load modernizr first -->
+    <script type="text/javascript" src="js/libs/modernizr.js"></script>
+</head>
+
+<body>
+    <!-- loading animation -->
+    <div id="qLoverlay"></div>
+    <div id="qLbar"></div>
+
+    <div id="header">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header"> <a class="navbar-brand" href="dashboard.html">Supr.<span class="slogan">admin</span></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon16 icomoon-icon-arrow-4"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-right usernav">
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="icon16 icomoon-icon-bell"></span><span class="notification">3</span> </a>
+                        <ul class="dropdown-menu">
+                            <li class="menu">
+                                <ul class="notif">
+                                    <li class="header"><strong>Notifications</strong> (3) items</li>
+                                    <li> <a href="#"> <span class="icon"><span class="icon16 icomoon-icon-user-plus"></span></span> <span class="event">1 User is registred</span> </a> </li>
+                                    <li> <a href="#"> <span class="icon"><span class="icon16 icomoon-icon-bubble-3"></span></span> <span class="event">Jony add 1 comment</span> </a> </li>
+                                    <li> <a href="#"> <span class="icon"><span class="icon16 icomoon-icon-new"></span></span> <span class="event">admin Julia added post with a long description</span> </a> </li>
+                                    <li class="view-all"><a href="#">View all notifications <span class="icon16 icomoon-icon-arrow-right-8"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown"> <img src="images/avatar.jpg" alt="" class="image" /> <span class="txt">admin@supr.com</span> <b class="caret"></b> </a>
+                        <ul class="dropdown-menu">
+                            <li class="menu">
+                                <ul>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-user-plus"></span>Edit profile</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-bubble-2"></span>Approve comments</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-plus"></span>Add user</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html"><span class="icon16 icomoon-icon-exit"></span><span class="txt"> Logout</span></a></li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </nav>
+        <!-- /navbar -->
+    </div>
+    <!-- End #header -->
+
+    <div class="wrapper">
+                    <div id="sidebarbg" class=""></div>
+            <div class="collapseBtn leftbar"> <a href="#" class="tipR" title="Hide sidebar"><i class="s16 minia-icon-list-3"></i></span></a> </div>
+            <div id="sidebar" class="page-sidebar collapse-sidebar">
+                <div class="shortcuts">
+                    <ul>
+                        <li><a href="support.html" title="Support section" class="tip"><span class="icon24 icomoon-icon-support"></span></a></li>
+                        <li><a href="#" title="Database backup" class="tip"><span class="icon24 icomoon-icon-database"></span></a></li>
+                        <li><a href="charts.html" title="Sales statistics" class="tip"><span class="icon24 icomoon-icon-pie-2"></span></a></li>
+                        <li><a href="#" title="Write post" class="tip"><span class="icon24 icomoon-icon-pencil"></span></a></li>
+                    </ul>
+                </div>
+                <!-- End search -->
+                <div class="sidenav">
+                    <div class="sidebar-widget" style="margin: -1px 0 0 0;">
+                        <h5 class="title" style="margin-bottom:0">Navigation</h5>
+                    </div>
+                    <!-- End .sidenav-widget -->
+                    <div class="mainnav">
+                        <ul>
+                            <li><a href="admin"><span class="icon16 icomoon-icon-dashboard"></span>Dashboard</a></li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-truck"></span>Manage Purchase</a>
+                                <ul class="sub">
+                                    <li><a href="#"><span class="icon16 icomoon-icon-gift"></span>Supplier</a>
+                                        <ul class="sub">
+                                            <li><a href="suppliers/create"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Supplier</a></li>
+                                            <li><a href="suppliers"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Supplier</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> <a href="#"><span class="icon16 silk-icon-credit-card"></span>Purchase<span class="notification red">new</span></a>
+                                        <ul class="sub">
+                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>New Purchase</a></li>
+                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Purchase History</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-grid-3"></span>Product</a>
+                                <ul class="sub">
+                                    <li><a href="products/create"><span class="icon16 icomoon-icon-arrow-right-3"></span>Add Product</a></li>
+                                    <li><a href="products"><span class="icon16 icomoon-icon-arrow-right-3"></span>Manage Product</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Barcode Print</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Damage Product</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Category</a>
+                                        <ul class="sub">
+                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Product Category</a></li>
+                                            <li><a href="#"><span class="icon16 icomoon-icon-arrow-right-3"></span>Sub Category</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-cart"></span>Order Process</a>
+                                <ul class="sub">
+                                    <li><a href="#"><span class="icon16 icomoon-icon-cart-plus"></span>New Order</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-calculate-2"></span>Manage Order</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-copy-2"></span>Manage Invoice</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-user"></span>Customer</a>
+                                <ul class="sub">
+                                    <li><a href="customers/create"><span class="icon16 icomoon-icon-user-plus-2"></span>Add Customer</a></li>
+                                    <li><a href="customers"><span class="icon16 icomoon-icon-vcard"></span>Manage Customer</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-stats"></span>Report</a>
+                                <ul class="sub">
+                                    <li><a href="#"><span class="icon16 icomoon-icon-stats-up"></span>Sales Report</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-bars"></span>Purchase Report</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-paper-plane"></span>Email Campaign</a>
+                                <ul class="sub">
+                                    <li><a href="#"><span class="icon16 icomoon-icon-mail-2"></span>New campaign</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-file-4"></span>Manage Campaign</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-megaphone"></span>Camaign Result</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-cogs"></span>Settings</a>
+                                <ul class="sub">
+                                    <li><a href="#"><span class="icon16 icomoon-icon-briefcase-3"></span>Business Profile</a></li>
+                                    <li><a href="#"><span class="icon16 icomoon-icon-folder-open-2"></span>Manage Tax Rules</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="#"><span class="icon16 icomoon-icon-users"></span>Employee</span></a>
+                                <ul class="sub">
+                                    <li><a href="employees"><span class="icon16 icomoon-icon-list"></span>Employee List</a></li>
+                                    <li><a href="employees/create"><span class="icon16 icomoon-icon-user-plus"></span>Add Employee</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End sidenav -->
+                <!-- End .sidenav-widget -->
+            </div>
+            <!-- End #sidebar -->
+                    <div id="content" class="clearfix">
+        <div class="contentwrapper"><!--Content wrapper-->
+
+            <div class="heading">
+
+                <h3>Manage Supplier</h3>
+
+                <div class="resBtnSearch">
+                    <a href="#"><span class="icon16 icomoon-icon-search-3"></span></a>
+                </div>
+                <ul class="breadcrumb">
+                    <li>You are here:</li>
+                    <li>
+                        <a href="#" class="tip" title="back to dashboard">
+                            <span class="icon16 icomoon-icon-screen-2"></span>
+                        </a>
+                            <span class="divider">
+                                <span class="icon16 icomoon-icon-arrow-right-3"></span>
+                            </span>
+                    </li>
+                    <li class="active">Manage Supplier</li>
+                </ul>
+
+            </div><!-- End .heading-->
+
+    <!-- Build page from here: Usual with <div class="row-fluid"></div> -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default gradient">
+                <div class="panel-heading">
+                    <h4>
+                        <span>Manage Supplier</span>
+                    </h4>
+                </div>
+                <div class="panel-body noPad clearfix">
+                    <table cellpadding="0" cellspacing="0" border="0" class="dynamicTable display table table-bordered" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Sl</th>
+                            <th>Company Name</th>
+                            <th>Contact Name</th>
+                            <th>Phone</th>
+                            <th>HomePage</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                              <tr class="odd gradeX">
+                 <td>1</td>
+                 <td>Exotic Liquids</td>
+                 <td>Charlotte Cooper</td>
+                 <td>(171) 555-2222</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/1" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/1/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>2</td>
+                 <td>New Orleans Cajun Delights</td>
+                 <td>Shelley Burke</td>
+                 <td>(100) 555-4822</td>
+                 <td>#CAJUN.HTM#</td>
+                 <td class="center">
+                 <a href="suppliers/2" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/2/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>3</td>
+                 <td>Grandma Kelly&#039;s Homestead</td>
+                 <td>Regina Murphy</td>
+                 <td>(313) 555-5735</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/3" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/3/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>4</td>
+                 <td>Tokyo Traders</td>
+                 <td>Yoshi Nagase</td>
+                 <td>(03) 3555-5011</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/4" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/4/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>5</td>
+                 <td>Cooperativa de Quesos &#039;Las Cabras&#039;</td>
+                 <td>Antonio del Valle Saavedra </td>
+                 <td>(98) 598 76 54</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/5" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/5/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>6</td>
+                 <td>Mayumi&#039;s</td>
+                 <td>Mayumi Ohno</td>
+                 <td>(06) 431-7877</td>
+                 <td>Mayumi&#039;s (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/mayumi.htm#</td>
+                 <td class="center">
+                 <a href="suppliers/6" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/6/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>7</td>
+                 <td>Pavlova, Ltd.</td>
+                 <td>Ian Devling</td>
+                 <td>(03) 444-2343</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/7" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/7/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>8</td>
+                 <td>Specialty Biscuits, Ltd.</td>
+                 <td>Peter Wilson</td>
+                 <td>(161) 555-4448</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/8" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/8/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>9</td>
+                 <td>PB Knckebrd AB</td>
+                 <td>Lars Peterson</td>
+                 <td>031-987 65 43</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/9" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/9/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>10</td>
+                 <td>Refrescos Americanas LTDA</td>
+                 <td>Carlos Diaz</td>
+                 <td>(11) 555 4640</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/10" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/10/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>11</td>
+                 <td>Heli Swaren GmbH &amp; Co. KG</td>
+                 <td>Petra Winkler</td>
+                 <td>(010) 9984510</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/11" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/11/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>12</td>
+                 <td>Plutzer Lebensmittelgromrkte AG</td>
+                 <td>Martin Bein</td>
+                 <td>(069) 992755</td>
+                 <td>Plutzer (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/plutzer.htm#</td>
+                 <td class="center">
+                 <a href="suppliers/12" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/12/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>13</td>
+                 <td>Nord-Ost-Fisch Handelsgesellschaft mbH</td>
+                 <td>Sven Petersen</td>
+                 <td>(04721) 8713</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/13" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/13/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>14</td>
+                 <td>Formaggi Fortini s.r.l.</td>
+                 <td>Elio Rossi</td>
+                 <td>(0544) 60323</td>
+                 <td>#FORMAGGI.HTM#</td>
+                 <td class="center">
+                 <a href="suppliers/14" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/14/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>15</td>
+                 <td>Norske Meierier</td>
+                 <td>Beate Vileid</td>
+                 <td>(0)2-953010</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/15" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/15/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>16</td>
+                 <td>Bigfoot Breweries</td>
+                 <td>Cheryl Saylor</td>
+                 <td>(503) 555-9931</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/16" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/16/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>17</td>
+                 <td>Svensk Sjfda AB</td>
+                 <td>Michael Bjrn</td>
+                 <td>08-123 45 67</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/17" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/17/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>18</td>
+                 <td>Aux joyeux ecclsiastiques</td>
+                 <td>Guylne Nodier</td>
+                 <td>(1) 03.83.00.68</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/18" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/18/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>19</td>
+                 <td>New England Seafood Cannery</td>
+                 <td>Robb Merchant</td>
+                 <td>(617) 555-3267</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/19" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/19/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>20</td>
+                 <td>Leka Trading</td>
+                 <td>Chandra Leka</td>
+                 <td>555-8787</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/20" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/20/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>21</td>
+                 <td>Lyngbysild</td>
+                 <td>Niels Petersen</td>
+                 <td>43844108</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/21" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/21/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>22</td>
+                 <td>Zaanse Snoepfabriek</td>
+                 <td>Dirk Luchte</td>
+                 <td>(12345) 1212</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/22" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/22/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>23</td>
+                 <td>Karkki Oy</td>
+                 <td>Anne Heikkonen</td>
+                 <td>(953) 10956</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/23" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/23/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>24</td>
+                 <td>G&#039;day, Mate</td>
+                 <td>Wendy Mackenzie</td>
+                 <td>(02) 555-5914</td>
+                 <td>G&#039;day Mate (on the World Wide Web)#http://www.microsoft.com/accessdev/sampleapps/gdaymate.htm#</td>
+                 <td class="center">
+                 <a href="suppliers/24" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/24/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>25</td>
+                 <td>Ma Maison</td>
+                 <td>Jean-Guy Lauzon</td>
+                 <td>(514) 555-9022</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/25" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/25/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>26</td>
+                 <td>Pasta Buttini s.r.l.</td>
+                 <td>Giovanni Giudici</td>
+                 <td>(089) 6547665</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/26" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/26/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>27</td>
+                 <td>Escargots Nouveaux</td>
+                 <td>Marie Delamare</td>
+                 <td>85.57.00.07</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/27" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/27/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="even gradeX">
+                 <td>28</td>
+                 <td>Gai pturage</td>
+                 <td>Eliane Noz</td>
+                 <td>38.76.98.06</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/28" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/28/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+                      <tr class="odd gradeX">
+                 <td>29</td>
+                 <td>Forts d&#039;rables</td>
+                 <td>Chantal Goulet</td>
+                 <td>(514) 555-2955</td>
+                 <td></td>
+                 <td class="center">
+                 <a href="suppliers/29" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                     <span class="icon-style  icomoon-icon-search-3"></span>
+                 </a>
+                 <a href="suppliers/29/edit" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                     <i class="icon-style icomoon-icon-pencil-3"></i>
+                 </a>
+                 <form method="POST" action="customers" accept-charset="UTF-8"><input name="_method" type="hidden" value="DELETE"><input name="_token" type="hidden" value="56vnDdNzlYn5oTbbKrRoFzJJbaRinE1yLQpehpTh">
+                 <input class="btn btn-danger btn-xs" type="submit" value="Delete"><i class="icon-style  icomoon-icon-remove-3"></i>
+                 </form>
+                 </td>
+             </tr>
+         
+         </tbody>
+
+ </table>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Important plugins put in all pages -->
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery/plugins/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery/plugins/jRespond.min.js"></script>
+
+    <!-- Charts plugins -->
+    <script type="text/javascript" src="js/jquery/plugins/charts/sparkline/jquery.sparkline.min.js"></script><!-- Sparkline plugin -->
+    <!-- Misc plugins -->
+    <script type="text/javascript" src="js/jquery/plugins/misc/qtip/jquery.qtip.min.js"></script>
+    <!-- Custom tooltip plugin -->
+    <script type="text/javascript" src="js/jquery/plugins/misc/totop/jquery.ui.totop.min.js"></script>
+
+    <!-- Search plugin -->
+    <script type="text/javascript" src="js/jquery/plugins/misc/search/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="js/jquery/plugins/misc/search/tipuesearch_data.js"></script><!-- JSON for searched results -->
+    <script type="text/javascript" src="js/jquery/plugins/misc/search/tipuesearch.js"></script>
+
+    <!-- Form plugins -->
+    <script type="text/javascript" src="js/jquery/plugins/forms/uniform/jquery.uniform.min.js"></script>
+
+    <!-- Init plugins -->
+    <script type="text/javascript" src="js/main.js"></script><!-- Core js functions -->
+    <script type="text/javascript" src="js/empty.js"></script><!-- Init plugins only for page -->
+</body>
+</html>
