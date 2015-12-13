@@ -4324,6 +4324,14 @@ tr.custom-tr td.vertical-td, tr.custom-tr th.vertical-th {
     color: #000;
 }
 
+/************ add by sonkoto: Start ************/
+#general-list{
+    width:55%;
+    margin-left:auto;
+    margin-right:auto;
+}
+/************ add by sonkoto: End ************/
+
 
 /************ apply the css print Start ************/
 /*.print_area{*/

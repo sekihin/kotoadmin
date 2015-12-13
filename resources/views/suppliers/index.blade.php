@@ -50,6 +50,7 @@
                         <tbody>
         <?php $n = 0;?>
          @foreach ($suppliers as $supplier)
+             <?php $n++;?>
              {!! Form::open(['method' => 'DELETE', 'route'=>['suppliers.destroy', $supplier->SupplierID]]) !!}
              <tr class="{{ ($n==0) ? 'gradeX' : 'gradeC' }}">
                  <td>{{ $supplier->SupplierID }}</td>

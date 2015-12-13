@@ -164,11 +164,25 @@ $(document).ready(function() {
                 number: "Please enter a valid number."
             }
         }
-
-
-
-
     });
+
+    //--------------- Form add_product.html tab general------------------//
+    $("#form-general").validate({
+        ignore: null,
+        ignore: 'input[type="hidden"]',
+        rules: {
+            product_name: {
+                required: true
+            }
+        },
+        messages: {
+            product_name: {
+                required: "Please enter a something"
+            }
+        }
+    });
+
+
 
 });//End document ready functions
 

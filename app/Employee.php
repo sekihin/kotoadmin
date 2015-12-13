@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Emloyee extends Model {
+class Employee extends Model {
 
 	protected $primaryKey = 'EmployeeID';
 
