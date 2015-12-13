@@ -43,19 +43,20 @@
                             <th>Company Name</th>
                             <th>Contact Name</th>
                             <th>Phone</th>
-                            <th>HomePage</th>
+                            <th>Address</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
         <?php $n = 0;?>
          @foreach ($suppliers as $supplier)
-             <tr class="{{ ($n++%2) ? 'even' : 'odd' }} gradeX">
+             {!! Form::open(['method' => 'DELETE', 'route'=>['suppliers.destroy', $supplier->SupplierID]]) !!}
+             <tr class="{{ ($n==0) ? 'gradeX' : 'gradeC' }}">
                  <td>{{ $supplier->SupplierID }}</td>
                  <td>{{ $supplier->CompanyName }}</td>
                  <td>{{ $supplier->ContactName }}</td>
                  <td>{{ $supplier->Phone }}</td>
-                 <td>{{ $supplier->HomePage }}</td>
+                 <td>{{ $supplier->Address }}</td>
                  <td class="center">
                  <a href="{{url('suppliers',$supplier->SupplierID)}}" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
                      <span class="icon-style  icomoon-icon-search-3"></span>
@@ -63,11 +64,14 @@
                  <a href="{{route('suppliers.edit',$supplier->SupplierID)}}" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                      <i class="icon-style icomoon-icon-pencil-3"></i>
                  </a>
-                 {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $supplier->id]]) !!}
-                 {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}<i class="icon-style  icomoon-icon-remove-3"></i>
-                 {!! Form::close() !!}
+
+                 <a href="#" class="btn btn-danger btn-xs" title="" data-toggle="tooltip" data-placement="top" onclick="$(this).closest('form')[0].submit();" data-original-title="Delete">
+                     <i class="icon-style  icomoon-icon-remove-3"></i>
+                 </a>
+
                  </td>
              </tr>
+             {!! Form::close() !!}
          @endforeach
 
          </tbody>

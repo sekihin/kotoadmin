@@ -3699,6 +3699,7 @@ body.rtl .support-section .sendMsg {margin-right: 0;}
     border-top: 1px solid #c4c4c4;
     text-align: center;
     padding-top: 5px;
+    margin-left:0;
 }
 #sidebar .sidenav .mainnav ul li a.current:after, #sidebar .sidenav .mainnav ul li a.current:before {
     left: 100%;
@@ -3747,5 +3748,10 @@ body.rtl .support-section .sendMsg {margin-right: 0;}
 .icon-style{
     color: #fff;
 }
-
-
+/* new purchase*/
+table.even-color tr.odd{
+    background-color: #fff;
+}
+table.even-color tr.even{
+    background-color: #f7f7f7;
+}

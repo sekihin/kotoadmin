@@ -20,10 +20,30 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::resource('categories', 'CategoryController');
+
+Route::resource('customerCustomerDemo', 'CustomerCustomerDemoController');
+
+Route::resource('customerDemographics', 'CustomerDemographicController');
+
 Route::resource('customers', 'CustomerController');
+
+Route::resource('employees', 'EmployeeController');
+
+Route::resource('EmployeeTerritories', 'EmployeeTerritoryController');
+
+Route::resource('orderDetails', 'OrderDetailController');
+
+Route::resource('orders', 'OrderController');
 
 Route::resource('products', 'ProductController');
 
+Route::resource('region', 'RegionController');
+
+Route::resource('shippers', 'ShipperController');
+
 Route::resource('suppliers', 'SupplierController');
+
+Route::resource('territories', 'SupplierController');
 
 
