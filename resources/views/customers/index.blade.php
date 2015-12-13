@@ -38,7 +38,7 @@
              <td><a href="{{url('customers',$customer->CustomerID)}}" class="btn btn-primary">Read</a></td>
              <td><a href="{{route('customers.edit',$customer->CustomerID)}}" class="btn btn-warning">Update</a></td>
              <td>
-             {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $customer->id]]) !!}
+             {!! Form::open(['method' => 'DELETE', 'route'=>['customers.destroy', $customer->CustomerID]]) !!}
              {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
              {!! Form::close() !!}
              </td>

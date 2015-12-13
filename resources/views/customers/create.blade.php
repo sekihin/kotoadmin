@@ -1,6 +1,6 @@
 @extends('layout.master')
 @section('content')
-    <h1>Create Book</h1>
+    <h1>Create Customer</h1>
     {!! Form::open(['url' => 'customers']) !!}
     <div class="form-group">
         <a href="{{ url('customers')}}" class="btn btn-primary">Back</a>
