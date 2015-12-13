@@ -6,7 +6,7 @@
 
             <div class="heading">
 
-                <h3>Manage Product</h3>
+                <h3>Employee List</h3>
 
                 <div class="resBtnSearch">
                     <a href="#"><span class="icon16 icomoon-icon-search-3"></span></a>
@@ -21,7 +21,7 @@
                                 <span class="icon16 icomoon-icon-arrow-right-3"></span>
                             </span>
                     </li>
-                    <li class="active">Manage Product</li>
+                    <li class="active">Employee List</li>
                 </ul>
 
             </div><!-- End .heading-->
@@ -32,37 +32,35 @@
                     <div class="panel panel-default gradient">
                         <div class="panel-heading">
                             <h4>
-                                <span>Manage Product</span>
+                                <span>Employee List</span>
                             </h4>
                         </div>
                         <div class="panel-body noPad clearfix">
                             <table cellpadding="0" cellspacing="0" border="0" class="dynamicTable display table table-bordered" width="100%">
                                 <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Product Name</th>
-                                    <th>Product Category</th>
-                                    <th>Price</th>
-                                    <th>Stock Available</th>
+                                    <th>SL</th>
+                                    <th>Picture</th>
+                                    <th>Name</th>
+                                    <th>Address</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <?php $n = 0;?>
-                                @foreach ($products as $product)
+                                @foreach ($employees as $employee)
                                     <?php $n++;?>
-                                    {!! Form::open(['method' => 'DELETE', 'route'=>['products.destroy', $product->ProductID]]) !!}
+                                    {!! Form::open(['method' => 'DELETE', 'route'=>['employees.destroy', $employee->EmployeeID]]) !!}
                                     <tr class="{{ ($n==0) ? 'gradeX' : 'gradeC' }}">
-                                        <td>{{ $product->ProductID }}</td>
-                                        <td>{{ $product->ProductName }}</td>
-                                        <td>{{ $product->CategoryID }}</td>
-                                        <td>{{ $product->UnitPrice }}</td>
-                                        <td>{{ $product->UnitsInStock }}</td>
+                                        <td>{{ $employee->EmployeeID }}</td>
+                                        <td><img border="0" src="images/avatar.jpg" width="32" height="32" class="image"></td>
+                                        <td>{{ $employee->FirstName }} {{ $employee->LastName }}</td>
+                                        <td>{{ $employee->Address }}</td>
                                         <td class="center">
-                                            <a href="{{url('products',$product->ProductID)}}" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
+                                            <a href="{{url('employees',$employee->EmployeeID)}}" class="btn bg-olive btn-xs" data-toggle="tooltip" data-placement="top" title="" data-original-title="View">
                                                 <span class="icon-style  icomoon-icon-search-3"></span>
                                             </a>
-                                            <a href="{{route('products.edit',$product->ProductID)}}" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
+                                            <a href="{{route('employees.edit',$employee->EmployeeID)}}" class="btn bg-navy btn-xs" title="" data-toggle="tooltip" data-placement="top" data-original-title="Edit">
                                                 <i class="icon-style icomoon-icon-pencil-3"></i>
                                             </a>
 

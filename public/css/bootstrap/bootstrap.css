@@ -2547,7 +2547,8 @@ fieldset[disabled] .btn-link:focus {
 }
 
 .btn-xs {
-  padding: 1px 5px;
+  /*padding: 1px 5px;*/
+    padding:2px 0 2px 5px;/* add by sonkoto */
 }
 
 .btn-block {

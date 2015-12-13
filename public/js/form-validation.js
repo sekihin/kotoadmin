@@ -90,93 +90,99 @@ $(document).ready(function() {
 
    
     
-	//--------------- Form validation ------------------//
+	//--------------- Form validation :add supplier.html------------------//
 	$('#select1').select2({placeholder: "Select"});
-    $("#form-validate").validate({
+    $("#form-add-supplier").validate({
     	ignore: null,
     	ignore: 'input[type="hidden"]',
     	rules: {
-    		select1: "required",
-			required: "required",
-			requiredArea: "required",
-			required1: {
-				required: true,
-				minlength: 4
-			},
-			password: {
-				required: true,
-				minlength: 5
-			},
-			confirm_password: {
-				required: true,
-				minlength: 5,
-				equalTo: "#password"
-			},
+
+			required: {
+                required: true,
+            },
+            required1: {
+                required: true,
+            },
+			requiredArea: {
+                required: true,
+            },
 			email: {
 				required: true,
 				email: true
 			},
-			maxLenght: {
-				required: true,
-      			maxlength: 10
-			},
-			rangelenght: {
-		      required: true,
-		      rangelength: [10, 20]
-		    },
-		    minval: {
-		      required: true,
-		      min: 13
-		    },
-		    maxval: {
-		      required: true,
-		      max: 13
-		    },
-		    range: {
-		      required: true,
-		      range: [5, 10]
-		    },
-		    url: {
-		      required: true,
-		      url: true
-		    },
-		    date: {
-		      required: true,
-		      date: true
-		    },
 		    number: {
 		      required: true,
 		      number: true
 		    },
-		    digits: {
-		      required: true,
-		      digits: true
-		    },
-		    ccard: {
-		      required: true,
-		      creditcard: true
-		    },
-			agree: "required"
 		},
 		messages: {
 			required: "Please enter a something",
-			required1: {
-				required: "This field is required",
-				minlength: "This field must consist of at least 4 characters"
-			},
-			password: {
-				required: "Please provide a password",
-				minlength: "Your password must be at least 5 characters long"
-			},
-			confirm_password: {
-				required: "Please provide a password",
-				minlength: "Your password must be at least 5 characters long",
-				equalTo: "Please enter the same password as above"
-			},
+            required1: "Please enter a something",
+            requiredArea: "Please enter a something",
 			email: "Please enter a valid email address",
-			agree: "Please accept our policy"
+            number: "Please enter a valid number.",
 		}
     });
+
+    //--------------- Form new_purchase.html ------------------//
+    $("#add_product_form").validate({
+        ignore: null,
+        ignore: 'input[type="hidden"]',
+        rules: {
+            select1: "required",
+            required: "required",
+            requiredArea: "required",
+            required1: {
+                required: true,
+                minlength: 4
+            },
+            product_name: {
+                required: true
+            },
+            qty: {
+                required: true
+            },
+            price: {
+                required: true,
+                number: true
+            }
+        },
+        messages: {
+            required: "Please enter a something",
+            required1: {
+                required: "This field is required",
+                minlength: "This field must consist of at least 4 characters"
+            },
+            product_name: {
+                required: "Please enter a something",
+            },
+            qty: {
+                required: "Please enter product quantity.",
+            },
+            price: {
+                required: "This field is required.",
+                number: "Please enter a valid number."
+            }
+        }
+    });
+
+    //--------------- Form add_product.html tab general------------------//
+    $("#form-general").validate({
+        ignore: null,
+        ignore: 'input[type="hidden"]',
+        rules: {
+            product_name: {
+                required: true
+            }
+        },
+        messages: {
+            product_name: {
+                required: "Please enter a something"
+            }
+        }
+    });
+
+
 
 });//End document ready functions
 
